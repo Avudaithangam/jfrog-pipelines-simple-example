@@ -74,7 +74,7 @@ pipelines:
             - name: step_3
             - name: step_4  
           integrations:
-            - name: my_github            
+            - name: jfrog_github            
         execution:
           onExecute:
             - 'curl -H "Authorization: token ${int_my_github_token}" ${int_my_github_url}/rate_limit'
