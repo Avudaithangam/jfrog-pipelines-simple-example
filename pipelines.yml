@@ -2,7 +2,7 @@ resources:
   - name: myGitRepo
     type: GitRepo
     configuration:
-      gitProvider: jfrog_github
+      gitProvider: my_github
       path: Avudaithangam/jfrog-pipelines-simple-example
       branches:
         include: master
@@ -74,7 +74,7 @@ pipelines:
             - name: step_3
             - name: step_4  
           integrations:
-            - name: jfrog_github            
+            - name: my_github            
         execution:
           onExecute:
             - 'curl -H "Authorization: token ${int_my_github_token}" ${int_my_github_url}/rate_limit'
