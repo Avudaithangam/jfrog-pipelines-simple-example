@@ -2,7 +2,7 @@ resources:
   - name: myGitRepo
     type: GitRepo
     configuration:
-      gitProvider: my_github
+      gitProvider: jfrog_github
       path: Avudaithangam/jfrog-pipelines-simple-example
       branches:
         include: master
